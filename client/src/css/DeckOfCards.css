@@ -1,0 +1,98 @@
+.deck-of-cards-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 120px;    
+  } 
+  
+  .card-stack {
+    position: relative;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    text-align: center;
+    cursor: pointer;
+    transition: width 2s, height 2s, transform 2s; /* Adjust transition for smoother animation */
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 2000px; /* Increase perspective for better 3D effect */
+  
+  }
+  
+  .card.flip:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #ffffff; /* Match background color of card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box-shadow to simulate pages */
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+    display: none; /* Initially hide the back content */
+  }
+  
+  .card.flip:hover .flip-card-front {
+    display: none; /* Hide front content when card is flipped */
+  }
+  
+  .card.flip:hover .flip-card-back {
+    display: block; /* Show back content when card is flipped */
+  }
+  
+  .card:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+    background: linear-gradient(to right, #0ff, #ff0); /* Change background color on hover */
+  }
+  
+  .card:not(:last-child) {
+    transform: translateY(-60px);
+  }
+  
+  .card.active {
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+   
+  }
+  
+  .card.active:hover {    
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+    background: linear-gradient(to right, #0ff, #ff0); /* Change background color on hover */
+    animation-name: cardStack;
+    animation-duration: 4s;
+  }
+  
+
+  @keyframes cardStack {
+    0%   {background-color: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));}
+    25%  {background-color: linear-gradient(to right, rgba(112, 62, 62, 0), rgb(212, 255, 0));}
+    50%  {background-color: linear-gradient(to right, rgba(213, 206, 206, 0), rgb(8, 128, 141));}
+    100% {background-color:linear-gradient(to right, rgba(229, 232, 226, 0), rgb(26, 141, 8));}
+  }

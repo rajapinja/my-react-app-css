@@ -1,0 +1,50 @@
+
+.container_images {
+  margin: 20px auto;
+  max-width: 820px;
+  padding: 0 20px;
+  border-radius: 8px;
+  border-width: 4px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card_image {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: calc(10% - 20px); /* Adjust card width based on 5 cards per row */ 
+  max-width: 110x; /* Set maximum width */
+  min-width: 110px; /* Set a minimum width for each card */
+  height: 110px;
+  box-shadow: 0 4px 8px rgba(96, 5, 207, 0.4);
+  transition: transform 0.3s ease;
+}
+
+
+.card_image:hover,
+.card_image:focus {
+  /* Apply desired styles when card is hovered or focused */
+  transform: scale(1.60); /* Increase size of the card */
+}
+
+.card-img-top {
+  width: 110px; /* Adjust width as needed */
+  height: 80px; /* Adjust height as needed */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 6px;  
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

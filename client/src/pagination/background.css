@@ -1,0 +1,47 @@
+
+.bgimage {
+    background-image: url('../images/LightBlue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.headingimage {
+    background-image: url('../images/LightBlue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+.adbimage {
+    background-image: url('../images/LightBlue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.btimage {
+    background-image: url('../images/LightBlue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+   
+.wcuimage {
+    background-image: url('../images/LightBlue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.contactimage {
+    background-image: url('../images/LightBlue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.li-strong{
+  font-size: 24px;
+  color: brown;
+}
+
+.bgcolors{
+    background-image: url('../images/colorCombi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+  }

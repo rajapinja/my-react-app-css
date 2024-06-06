@@ -1,0 +1,125 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  color: black;
+  padding: 4px 8px;
+  text-decoration: none;
+  list-style-type: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+.pagination button:hover {
+  background-color: #13aacc;
+}
+
+.pagination>* {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-link {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  /* font-size: 26px; */
+  font-size: 16px;
+  margin-right: 10px;
+  /* Adjust as needed */
+}
+
+.menu-link.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.main_pagenation {
+  width: 100%;
+  min-height: 200px;
+  padding: 15px;
+  border: 2px solid rgb(27, 172, 4);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.header-page {
+  border: 2px solid rgb(27, 172, 4);
+  background-color: rgb(233, 244, 181);
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  font-size: 24px;
+  transition: background-color .3s;
+}
+
+/* Media query for smaller devices */
+@media only screen and (max-width: 769px) {
+
+  .pagination {
+    display: inline-block;
+  }
+
+  .pagination button {
+    display: flex;
+    color: black;
+    float: left;
+    padding: 6px 12px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+  }
+
+  .pagination-list {
+    padding: 10px;
+    margin: 16px;
+    font-size: 18px;
+    min-width: 300px;
+    min-height: 80px;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_pagenation {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+  }
+
+  .menu-link {
+    font-size: 16px;
+  }
+
+
+
+}

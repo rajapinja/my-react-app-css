@@ -1,0 +1,12 @@
+{
+  "states": [
+    {
+      "state": "Telangana",
+      "districts": ["Adilabad", "Nizamabad", "Kamareddy","Karimnagar"]
+    },
+    {
+      "state": "Andhra Pradesh",
+      "districts": ["Kurnool", "Chittoor", "Vizag"]
+    }
+   ]
+}

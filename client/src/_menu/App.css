@@ -1,0 +1,21 @@
+.App {
+    font-family: sans-serif;
+    margin-top: 50px; /* Adjust the margin top to accommodate the menu bar */
+  }
+  
+  .MenuBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .Content {
+    margin-top: 50px; /* Adjust the margin top to accommodate the menu bar */
+    overflow-y: auto;
+    height: calc(100vh - 50px); /* Calculate the height of the content to fit the viewport */
+  }
+  
